@@ -75,8 +75,8 @@ class Image3DApp(QMainWindow):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         human_rects, _ = self.hog.detectMultiScale(
             gray,
-            winStride=(8, 8),  # Ajusta estos valores según tus necesidades
-            padding=(16, 16),  # Ajusta estos valores según tus necesidades
+            winStride=(8, 8),  
+            padding=(16, 16), 
             scale=1.05
         )
 
